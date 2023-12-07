@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="description" content="None" /><link rel="canonical" href="https://python-poetry.org/" />
+      <link rel="shortcut icon" href="img/favicon.ico" />
+    <title>PoetryGuide</title>
+    <link rel="stylesheet" href="css/theme.css" />
+    <link rel="stylesheet" href="css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="stylesheets/extra.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Guia de utiliza\u00e7\u00e3o do Poetry";
+        var mkdocs_page_input_path = "index.md";
+        var mkdocs_page_url = "/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="." class="icon icon-home"> PoetryGuide
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href=".">Guia de utilização do Poetry</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#comandos-basicos-do-poetry">Comandos básicos do Poetry</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#instalando-o-poetry">Instalando o  Poetry</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#criando-um-novo-projeto">Criando um novo projeto</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#inicializando-o-poetry-em-um-projeto-existente">Inicializando o Poetry em um projeto existente</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#adicionando-removendo-e-instalando-pacotes">Adicionando, removendo e instalando pacotes</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#executando-o-projeto-no-poetry">Executando o projeto no Poetry</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#acessando-as-configuracoes-do-poetry">Acessando as configurações do Poetry</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#gerenciando-as-venvs">Gerenciando as Venvs</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#instalando-e-usando-o-pyenv">Instalando e usando o Pyenv</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#instalando-o-pyenv-no-powershell">Instalando o Pyenv no PowerShell</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#adicionando-o-pyenv-no-path">Adicionando o pyenv no path</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#usando-diferentes-versoes-com-o-pyenv">Usando diferentes versões com o Pyenv</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#documentacoes">Documentações</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#videos-de-suporte">Vídeos de suporte</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href=".">PoetryGuide</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Guia de utilização do Poetry</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="guia-de-utilizacao-do-poetry">Guia de utilização do Poetry</h1>
+<p>O Poetry é um gerenciador de dependências e pacotes do Python, facilitando o desenvolvimento dos programas. Utilizando Venvs, cada projeto é isolado das dependências e versões do sistema, evitando possíveis conflitos. <a href="https://python-poetry.org/">python-poetry.org</a></p>
+<h2 id="comandos-basicos-do-poetry">Comandos básicos do Poetry</h2>
+<h4 id="instalando-o-poetry">Instalando o  Poetry</h4>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>pip<span class="w"> </span>install<span class="w"> </span>poetry
+</span></code></pre></div>
+<h4 id="criando-um-novo-projeto">Criando um novo projeto</h4>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>poetry<span class="w"> </span>new<span class="w"> </span>nome-da-pasta<span class="w"> </span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="nb">cd</span><span class="w"> </span>nome-da-pasta
+</span></code></pre></div>
+<h4 id="inicializando-o-poetry-em-um-projeto-existente">Inicializando o Poetry em um projeto existente</h4>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nb">cd</span><span class="w"> </span>pasta-do-projeto
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>poetry<span class="w"> </span>init<span class="w"> </span>
+</span></code></pre></div>
+<h4 id="adicionando-removendo-e-instalando-pacotes">Adicionando, removendo e instalando pacotes</h4>
+<ul>
+<li>
+<p>Adicionar pacote - <code>poetry add nome-do-pacote</code></p>
+</li>
+<li>
+<p>Remover pacote - <code>poetry remove nome-do-pacote</code> </p>
+</li>
+<li>
+<p>Atualizar as dependencias do pacote - <code>poetry update nome-do-pacote</code></p>
+</li>
+<li>
+<p>Instalar os pacotes e as configurações - <code>poetry install</code></p>
+</li>
+<li>
+<p>Instalar apenas dependências do projeto (Em projetos existentes) - <code>poetry install --no-root</code></p>
+</li>
+</ul>
+<h4 id="executando-o-projeto-no-poetry">Executando o projeto no Poetry</h4>
+<p>Antes de executar um projeto com o Poerty, SEMPRE inicialize a Venv para não executar o programa utilizando as dependências do sistema.</p>
+<ul>
+<li>
+<p>Inicializar a Venv - <code>poerty shell</code></p>
+</li>
+<li>
+<p>Excecutar o arquivo - <code>python nome-do-arquivo.py</code></p>
+</li>
+</ul>
+<p>ou</p>
+<ul>
+<li>Excecutar o arquivo <code>poetry run python nome-do arquivo.py</code></li>
+</ul>
+<h4 id="acessando-as-configuracoes-do-poetry">Acessando as configurações do Poetry</h4>
+<p>É possível alterar as configurações do Poetry, para acessá-las use <code>poetry config --list</code> para listar as configurações do Poetry</p>
+<h2 id="gerenciando-as-venvs">Gerenciando as Venvs</h2>
+<p>As venvs por padrão são ciradas no path do Poetry, isso pode ser alterado usando o comando </p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>poetry<span class="w"> </span>config<span class="w"> </span>virtualenvs.in-project<span class="w"> </span><span class="nb">true</span>
+</span></code></pre></div>
+<p>O Poetry por padrão cria uma venv usando o path do python padrão instalado, o diterório das venvs ficam por padrão na pasta do poetry.</p>
+<ul>
+<li>
+<p>Cria uma venv com o path - <code>poetry use env python</code> </p>
+</li>
+<li>
+<p>Inicializa a venv / Cria uma com o path padrão do sistema - <code>poetry shell</code></p>
+</li>
+</ul>
+<h2 id="instalando-e-usando-o-pyenv">Instalando e usando o Pyenv</h2>
+<p>É possível criar venvs com outras versões do Python e usá-las no Poetry, para facilitar a instalação
+das versões, pode ser usado o pacote "pyenv-win" que gerencia as versões do Python. 
+O pyenv originalmente suporta macOs e Unix, saiba mais em: <a href="https://github.com/pyenv/pyenv">github.com/pyenv</a> </p>
+<h4 id="instalando-o-pyenv-no-powershell">Instalando o Pyenv no PowerShell</h4>
+<ul>
+<li>Cria uma pasta no diretório do usuário e instala o Pyenv - <code>pip install pyenv-win --target \.pyenv</code></li>
+</ul>
+<h4 id="adicionando-o-pyenv-no-path">Adicionando o pyenv no path</h4>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="o">[</span>System.Environment<span class="o">]</span>::SetEnvironmentVariable<span class="o">(</span><span class="s1">&#39;PYENV&#39;</span>,<span class="nv">$env</span>:USERPROFILE<span class="w"> </span>+<span class="w"> </span><span class="s2">&quot;\.pyenv\pyenv-win\&quot;,&quot;</span>User<span class="s2">&quot;) </span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="s2">[System.Environment]::SetEnvironmentVariable(&#39;PYENV_ROOT&#39;,</span><span class="nv">$env</span><span class="s2">:USERPROFILE + &quot;</span><span class="se">\.</span>pyenv<span class="se">\p</span>yenv-win<span class="se">\&quot;</span>,<span class="s2">&quot;User&quot;</span><span class="o">)</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="o">[</span>System.Environment<span class="o">]</span>::SetEnvironmentVariable<span class="o">(</span><span class="s1">&#39;PYENV_HOME&#39;</span>,<span class="nv">$env</span>:USERPROFILE<span class="w"> </span>+<span class="w"> </span><span class="s2">&quot;\.pyenv\pyenv-win\&quot;,&quot;</span>User<span class="s2">&quot;)</span>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="s2">[System.Environment]::SetEnvironmentVariable(&#39;path&#39;, </span><span class="nv">$env</span><span class="s2">:USERPROFILE + &quot;</span><span class="se">\.</span>pyenv<span class="se">\p</span>yenv-win<span class="se">\b</span>in<span class="p">;</span><span class="s2">&quot; + </span><span class="nv">$env</span><span class="s2">:USERPROFILE + &quot;</span><span class="se">\.</span>pyenv<span class="se">\p</span>yenv-win<span class="se">\s</span>hims<span class="p">;</span><span class="s2">&quot; + [System.Environment]::GetEnvironmentVariable(&#39;path&#39;, &quot;</span>User<span class="s2">&quot;),&quot;</span>User<span class="s2">&quot;)</span>
+</span></code></pre></div>
+<h4 id="usando-diferentes-versoes-com-o-pyenv">Usando diferentes versões com o Pyenv</h4>
+<p>É recomendado configurar o caminho de instalação da venv para o diretório do projeto</p>
+<ul>
+<li>Instalar uma nova versão do Python - <code>pyenv install versão-desejada</code>    </li>
+<li>
+<p>Utilizar a versão instalada apenas no projeto - <code>pyenv local versão-desejada</code></p>
+</li>
+<li>
+<p>Instalar as configurações do Poetry - <code>poetry install</code></p>
+</li>
+</ul>
+<h2 id="documentacoes">Documentações</h2>
+<p><a href="https://python-poetry.org/docs/">python-poetry.org</a></p>
+<p><a href="https://earthly.dev/blog/python-poetry/">earthly.dev/python-poetry</a></p>
+<p><a href="https://pypi.org/project/pyenv-win/#add-system-settings">pypi.org/pyenv-win</a></p>
+<p><a href="https://github.com/pyenv-win/pyenv-win">github.com/pyenv-win</a></p>
+<h2 id="videos-de-suporte">Vídeos de suporte</h2>
+<p><a href="https://www.youtube.com/watch?v=0f3moPe_bhk">How to Create and Use Virtual Environments in Python With Poetry</a></p>
+<p><a href="https://www.youtube.com/watch?v=V5rKVrVhEh8&amp;t=6s">How to Use Poetry in Python to avoid Dependency Hell</a></p>
+<p><a href="https://www.youtube.com/watch?v=HTx18uyyHw8">How to Install and Run Multiple Python Versions on Windows 10/11 | pyenv &amp; virtualenv Setup Tutorial</a></p>
+              
+            </div>
+          </div><footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = ".";</script>
+    <script src="js/theme_extra.js"></script>
+    <script src="js/theme.js"></script>
+      <script src="search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
+
+<!--
+MkDocs version : 1.5.3
+Build Date UTC : 2023-12-05 18:58:11.816801+00:00
+-->
